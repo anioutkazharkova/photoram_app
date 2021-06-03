@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SettingsVC" customModule="photoram" customModuleProvider="target">
+            <connections>
+                <outlet property="emailLabel" destination="OIR-vI-2jC" id="r4c-19-Mn1"/>
+                <outlet property="nameLabel" destination="f6M-dE-kT0" id="UFH-8P-6da"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="User name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="V71-xK-HVi">
+                    <rect key="frame" x="20" y="84" width="83" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="f6M-dE-kT0">
+                    <rect key="frame" x="123" y="94.5" width="271" height="0.0"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OIR-vI-2jC">
+                    <rect key="frame" x="81" y="150.5" width="313" height="0.0"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="252" verticalHuggingPriority="251" text="Email" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KOz-Vz-yqh">
+                    <rect key="frame" x="20" y="140" width="41" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YaJ-5z-FB2">
+                    <rect key="frame" x="20" y="752" width="374" height="50"/>
+                    <color key="backgroundColor" systemColor="systemYellowColor"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="50" id="lvd-xe-NpM"/>
+                    </constraints>
+                    <state key="normal" title="Logout">
+                        <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </state>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                            <integer key="value" value="8"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                    <connections>
+                        <action selector="onLogoutClicked:" destination="-1" eventType="touchUpInside" id="eWg-oi-rTq"/>
+                    </connections>
+                </button>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="V71-xK-HVi" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="20" id="6eO-MM-Vw5"/>
+                <constraint firstItem="YaJ-5z-FB2" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="20" id="F77-MZ-fKv"/>
+                <constraint firstItem="f6M-dE-kT0" firstAttribute="centerY" secondItem="V71-xK-HVi" secondAttribute="centerY" id="GxQ-h8-6bE"/>
+                <constraint firstItem="KOz-Vz-yqh" firstAttribute="leading" secondItem="V71-xK-HVi" secondAttribute="leading" id="P0f-Df-lEx"/>
+                <constraint firstItem="V71-xK-HVi" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="40" id="aK4-OL-nLd"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="OIR-vI-2jC" secondAttribute="trailing" constant="20" id="apn-9x-Iyj"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="f6M-dE-kT0" secondAttribute="trailing" constant="20" id="bbA-pe-IPv"/>
+                <constraint firstItem="OIR-vI-2jC" firstAttribute="centerY" secondItem="KOz-Vz-yqh" secondAttribute="centerY" id="ely-Rg-Y8q"/>
+                <constraint firstItem="OIR-vI-2jC" firstAttribute="leading" secondItem="KOz-Vz-yqh" secondAttribute="trailing" constant="20" id="f5k-Cn-JV7"/>
+                <constraint firstItem="KOz-Vz-yqh" firstAttribute="top" secondItem="V71-xK-HVi" secondAttribute="bottom" constant="35" id="k0z-7q-KYf"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="YaJ-5z-FB2" secondAttribute="trailing" constant="20" id="l1M-ym-VVf"/>
+                <constraint firstItem="f6M-dE-kT0" firstAttribute="leading" secondItem="V71-xK-HVi" secondAttribute="trailing" constant="20" id="pv5-6k-Gfv"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="YaJ-5z-FB2" secondAttribute="bottom" constant="60" id="xFC-24-HQD"/>
+            </constraints>
+            <point key="canvasLocation" x="111.59420289855073" y="124.55357142857142"/>
+        </view>
+    </objects>
+    <resources>
+        <systemColor name="systemYellowColor">
+            <color red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
